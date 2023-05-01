@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Discipline: Client Side Web Development
+	Course: Computer Science
+	Griffith College Cork
+	Assignment 05 - Group Project: Build a Website
+
+	Bruna Gonçalves Heleno 
+	Student Id: 3009733
+
+	Rafiq Abudulai 
+	Student Id: 3104006
+-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="../resources/images/nightshroud.ico">
+	<link rel="stylesheet" type="text/css" href="../scripts/main.css">
+	<title> Assignment 5 </title>
+</head>
+<body>
+	<nav class="navbar">
+		<div id="subnav">
+			<a href="../index.html"> Home </a>
+		</div>
+		<div id="subnav">
+			<a href="about.html"> About </a>
+		</div>
+		<div class="dropdown">
+			<button class="dropBtn"> How To Play
+    		</button>
+    		<div class="dropContent">
+			      <a href="characters.html"> Characters </a>
+			      <a href="#map"> Map </a>
+			      <a href="monsters.html"> Monsters </a>
+			      <a href="rewards.html"> Rewards </a>
+    		</div>
+		</div>
+		<div id="subnav">
+			<a href="developers.html"> Developers </a>
+		</div>
+		<div id="subnav">
+			<a href="contact.html"> Contact </a>
+		</div>
+	</nav>
+	<div id="map">
+		<h1 class="titleHtPlay"> Map </h1>
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top:2%"> City </h2>
+			<ul>
+				<li> When you are in the city you can do a few things: </li>
+				<li style="margin-left: 15%"> Buy items, the items you are allowed to but depends on the prosperity of your team; You can carry 1 item for your head, body, feet; the numbers of potions depends on the level of your character; and for your hands depends on if the item is single-handed (2 items) or double-handed (1 item) </li>
+				<li style="margin-left: 15%"> Level up your character: after a long journey your character acquires experience, with more experience, more abilities </li>
+				<li style="margin-left: 15%"> Donate to the <strong> Sanctuary of the Great Oak</strong>, when you donate you receive two bless, which can help a lot to kill the monsters </li>
+				<li style="margin-left: 15%"> Do the <strong> City Event</strong>, city event is a card with a situation and two options, each option has a consequence, good or bad  </li>
+				<li> Tip: choose the items carefully, some are better for specific characters  </li>
+				<li> Tip 2: when doing the city event, try to think as your character, for example, my character is very curious, so it is not because I wouldn't go inside an abondened build to check a strange noise, that means my character wouldn't go either, because I'm sure he would </li>
+			</ul>
+			<div class="gallery2">
+				<div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/sanctuary.png"></div>
+			    </div>
+			    <div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/item.jpg" style="width:70%"></div>
+			    </div>
+			</div>
+		</div>
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top:2%"> Route </h2>
+			<ul>
+				<li> On route the only thing you can do is <strong> Route Event </strong> </li>
+				<li style="margin-left: 15%"> It works the same way as the City Event, there is a situation, with two options, each one with a consequence </li>
+				<li> Tip: playing with my friend, we decide that just one person reads and explains the situation and options to the others, two reasons for that:  </li>
+				<li style="margin-left: 15%"> First: it's faster than everybody reading </li>
+				<li style="margin-left: 15%"> Second: some of the cards are returned to the deck, so the consequences of the option we didn't choose remains a secret </li>
+			</ul>
+			<div class="gallery2">
+				<div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/roadFront.png" style="width:75%"></div>
+			    </div>
+			    <div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/roadBack.png" style="width:75%"></div>
+			    </div>
+			</div>
+		</div>
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top:5%"> Scenario </h2>
+			<ul>
+				<li> It is time to deal with the monsters! </li>
+				<li> The scenario may have requirements to be played </li>
+				<li> Every scenario has a specific objective </li>
+				<li> Tip: pay attention to the requirements, just because the scenario is present on the map does not mean you can play it </li>
+				<li> Tip: just one person builds the scenario, that way the others in the team don't see all the monsters and can experience fairer decisions </li>
+			</ul>
+			<div class="gallery2" style="margin-bottom: -15%">
+				<div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/scenario.png"></div>
+			    </div>
+			    <div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/scenario2.png"></div>
+			    </div>
+			</div>
+			<ul>
+				<li> There are obstacles, difficult terrains and traps (images below) </li>
+			</ul>
+			<div class="gallery">
+				<div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle.png">
+			    	<div class="backText">
+	    					<div class="text"> Obstacle </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle1.png">
+			    	<div class="backText">
+	    					<div class="text"> Door </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle2.png">
+			    		<div class="backText">
+	    					<div class="text"> Obstacle </div>
+	  					</div>
+	  				</div>
+			    </div>
+			  	<div class="hexBorder">
+			  		<div class="hex"><img src="../resources/images/obstacle3.png">
+			  		<div class="backText">
+	    					<div class="text"> Difficult Terrain </div>
+	  					</div>
+	  				</div>
+			  	</div>
+			 	<div class="hexBorder">
+			 		<div class="hex"><img src="../resources/images/obstacle4.png">
+			 			<div class="backText">
+	    					<div class="text"> Difficult Terrain </div>
+	  					</div>
+	  				</div>
+			 	</div>
+				<div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle5.png">
+			    	<div class="backText">
+	    					<div class="text"> Obstacle </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle6.png">
+			    		<div class="backText">
+	    					<div class="text"> Difficult Terrain </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/obstacle7.png">
+			    		<div class="backText">
+	    					<div class="text"> Obstacle </div>
+	  					</div>
+	  				</div>
+			    </div>
+			  	<div class="hexBorder">
+			  		<div class="hex"><img src="../resources/images/trap.png">
+			  			<div class="backText">
+	    					<div class="text"> Trap </div>
+	  					</div>
+	  				</div>
+			  	</div>
+			 	<div class="hexBorder">
+			 		<div class="hex"><img src="../resources/images/trap1.png">
+			 			<div class="backText">
+	    					<div class="text"> Trap </div>
+	  					</div>
+	  				</div>
+			 	</div>
+				<div class="hexBorder">
+					<div class="hex"><img src="../resources/images/trap2.png">
+						<div class="backText">
+	    					<div class="text"> Trap </div>
+	  					</div>
+	  				</div>
+				</div>
+   			</div>
+			<button class="btnHtPlay"><a href="monsters.html"> Next </a></button>
+			<p style="margin-top: 10%;"></p> <!-- this tag is just to fix the margin at the end of the div -->
+		</div>
+	</div>
+	<footer><small> Developed by <br> Bruna Heleno <br> Rafiq Abudulai </small></footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Discipline: Client Side Web Development
+	Course: Computer Science
+	Griffith College Cork
+	Assignment 05 - Group Project: Build a Website
+
+	Bruna Gonçalves Heleno 
+	Student Id: 3009733
+
+	Rafiq Abudulai 
+	Student Id: 3104006
+-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="../resources/images/thinkerer.ico">
+	<link rel="stylesheet" type="text/css" href="../scripts/main.css">
+	<title> Assignment 5 </title>
+</head>
+<body>
+	<nav class="navbar">
+		<div id="subnav">
+			<a href="../index.html"> Home </a>
+		</div>
+		<div id="subnav">
+			<a href="about.html"> About </a>
+		</div>
+		<div class="dropdown">
+			<button class="dropBtn"> How To Play
+    		</button>
+    		<div class="dropContent">
+			      <a href="characters.html"> Characters </a>
+			      <a href="map.html"> Map </a>
+			      <a href="monsters.html"> Monsters </a>
+			      <a href="rewards.html"> Rewards </a>
+    		</div>
+		</div>
+		<div id="subnav">
+			<a href="developers.html"> Developers </a>
+		</div>
+		<div id="subnav">
+			<a href="#contact"> Contact </a>
+		</div>
+	</nav>
+	<div id="contact">
+		<h1 class="title"> Contact </h1>
+		<div id="contactBack">
+			<p style="margin-left:15%"> To: <strong>Bruna & Rafiq </strong> </p>
+
+			<form action="../scripts/form.php" method="post">
+				<div>
+					<label for="name"> From: </label>
+					<div>
+						<input type="text" name="name" id="name" size="50" maxlength="100" placeholder="Type your name">	
+					</div>
+				</div>
+				<div>
+					<label for="email"> Email: </label>
+					<div>
+						<input type="email" name="email" id="email" size="50" maxlength="60" placeholder="youremail@email.com">
+					</div>
+				</div>
+				<div>
+					<label for="cell"> Cell phone Number: </label>
+					<div>
+						<input type="tel" name="cel" id="cel" size="12" maxlength="13" placeholder="99 999 9999">
+					</div>
+				</div>
+				<div>
+					<label> Can we contact you by WhatsApp? </label>
+					<div>
+						<input class="check" type="radio" name="whats" id="yes" value="yes" checked>
+						<label for="yes"> Yes &ensp; &emsp;</label>
+						<input class="check" type="radio" name="whats" id="no" value="no">
+						<label for="no"> No </label>
+					</div>
+				</div>
+				<div>
+					<label> Describe: </label>
+					<div>
+						<textarea name="note" placeholder= "Type all the information that it's necessary for us to understand what you need"></textarea>
+					</div>
+				</div>
+				<div>
+					<input type="submit"  value="Submit" class="btnHtPlay" id="submit"> 
+				</div>
+				<p style="margin-top: 10%;"></p> <!-- this tag is just to fix the margin at the end of the div -->
+			</form>
+		</div>
+	</div>
+	<footer><small> Developed by <br> Bruna Heleno <br> Rafiq Abudulai </small></footer>
+</body>
+</html>

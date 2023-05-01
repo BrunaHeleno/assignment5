@@ -1,0 +1,560 @@
+/*** Fonts ***/
+
+/*Titles*/
+@font-face{
+	font-family: Gloomhaven;
+	src: url("../resources/font/PirataOne-Regular.ttf");
+}
+
+/*Sub-Titles and links|buttons*/
+@font-face{
+	font-family: Nyala;
+	src: url("../resources/font/nyala.ttf");
+}
+
+/*General*/
+@font-face{
+	font-family: HighTower;
+	src: url("../resources/font/HTOWERT.ttf");
+}
+
+
+/*** Style for all Pages ***/
+
+/*** Change cursor ***/
+html{
+	cursor: url("../resources/images/cursor.png"), auto;
+}
+
+body{
+	background-color: #030405;	
+	color: #DEDBD9;
+}
+
+footer{
+	font-family: Nyala;
+	font-size: 1em;
+	color: #2E2E2E;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+}
+
+/*** Navbar with dropdown, items are hidden and appear when mouse hover on how to play ***/
+.navbar{
+  overflow: hidden;
+  font-family: Nyala;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  float: left;
+  font-size: 1em;
+  color: #DEDBD9;
+  text-align: center;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  cursor: url("../resources/images/cursor2.png"), auto;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropBtn{
+  font-size: 1em;
+  border: none;
+  outline: none;
+  color: #DEDBD9;
+  padding: 0.8em 1em;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: url("../resources/images/cursor.png"), auto;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #3C1919;
+}
+
+.dropContent{
+  display: none;
+  position: absolute;
+  background-color: #030405;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropContent a{
+  float: none;
+  color: #DEDBD9;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropContent a:hover{
+  background-color: #3C1919;
+}
+
+.dropdown:hover .dropContent{
+  display: block;
+}
+
+/*** Index ***/
+#index{
+	margin: auto;
+	padding-bottom: 2%;
+	margin-top: -5%;
+}
+
+/*** Image as background of the title ***/
+#index h1{
+	font-family: Gloomhaven;
+	font-size: 13em;
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #816527;
+	background-clip: text;
+	background-image: url("../resources/images/backIndex.jpg");
+	color: transparent;
+}
+
+#envelope{
+	background-image: url("../resources/images/backEnvelope.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50em;
+	height: 30em;
+	margin: auto;
+	text-align: center;
+	margin-top: -5%;
+}
+
+#envelope button{
+	background-image: url("../resources/images/btnLocked.png");
+	background-position: center;
+	border: none;
+	border-radius: 2em;
+	width: 11em;
+	height: 12em;
+	background-color: none;
+	margin-top: 20%;
+	cursor:url("../resources/images/cursor.png"), auto;
+	text-align: center;
+}
+
+#envelope a{
+	text-decoration: none;
+	font-family: Nyala;
+	font-size: 4em;
+	color: #DEDBD9;
+	cursor: url("../resources/images/cursor2.png"), auto;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #816527;
+}
+
+
+/*** About Page ***/
+#about{
+	background-image: url("../resources/images/backAbout.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 80%;
+	text-align: center;
+	font-family: HighTower;
+	color: #3C1919;
+	font-size: 2.5em;
+	padding: 6%;
+}
+
+#about a{
+	text-decoration: none;
+	font-family: Nyala;
+	font-size: 3em;
+	color: #3C1919;
+	cursor: url("../resources/images/cursor2.png"), auto;
+	text-transform: uppercase;
+}
+
+#about p{
+	padding: 3%;
+}
+
+.btn{
+	border: 0.5em solid #3C1919;
+	border-radius: 2em;
+	background-color: none;
+	cursor:url("../resources/images/cursor.png"), auto;
+	text-align: center;
+	padding: 2%;
+	background-color: transparent;
+}
+
+.btn:hover{
+	box-shadow: 0 12px 16px 0 rgba(60,25,25,0.5),0 17px 50px 0 rgba(60,25,25,0.3);
+}
+
+.title{
+	font-family: Nayla;
+	font-size: 3em;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #816527;
+}
+
+/*** Pages How To Play ***/
+.instructions{
+	background-image: url("../resources/images/backDivs.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 80%;
+	font-family: HighTower;
+	color: #3C1919;
+	font-size: 2.5em;
+	padding: 6%;
+}
+
+.titleHtPlay{
+	font-family: Gloomhaven;
+	font-size: 8em;
+	color: #816527;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DEDBD9;
+  margin-left: 5%;
+}
+
+.subtitle{
+	margin-left: 5%;
+	margin-top: -1%;
+	font-family: Nayla;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #816527;
+}
+
+.btnHtPlay{
+	border: 0.5em solid #3C1919;
+	border-radius: 1em;
+	background-color: none;
+	cursor:url("../resources/images/cursor.png"), auto;
+	text-align: center;
+	padding: 2%;
+	background-color: transparent;
+	margin-left: 45%;
+	margin-top: 5%;
+}
+
+.btnHtPlay:hover{
+	box-shadow: 0 12px 16px 0 rgba(60,25,25,0.5),0 17px 50px 0 rgba(60,25,25,0.3);
+}
+
+.btnHtPlay a{
+	text-decoration: none;
+	font-family: Nyala;
+	font-size: 3em;
+	color: #3C1919;
+	cursor: url("../resources/images/cursor2.png"), auto;
+	text-transform: uppercase;
+}
+
+li{
+	list-style-image: url("../resources/images/bulletPoint.png");
+	list-style-position: outside;
+	margin-left: 3%;
+	padding: 2%;
+}
+
+.gallery{
+  margin: auto;
+  margin-top: 1.5em;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 5em;
+  grid-gap: 0.3em;
+  padding-bottom: 2em;
+}
+
+.gallery img{
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  opacity: 1;
+}
+
+.hexBorder{
+	width: 245px;
+  height: 270px;
+  background-color: #816527;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex{
+  display: flex;
+  position: relative;
+  width: 240px;
+  height: 265px;
+  background-color: #DEDBD9;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexBorder:first-child, .hex:first-child{
+  grid-row-start: 1;
+  grid-column: 2 / span 2;
+}
+
+.hexBorder:nth-child(2), .hex:nth-child(2){
+  grid-row-start: 1;
+  grid-column: 4 / span 2;
+}
+
+.hexBorder:nth-child(3), .hex:nth-child(3){
+  grid-row-start: 1;
+  grid-column: 6 / span 2;
+}
+
+.hexBorder:nth-child(4), .hex:nth-child(4){
+  grid-row-start: 2;
+  grid-column: 3 / span 2;
+}
+
+.hexBorder:nth-child(5), .hex:nth-child(5){
+  grid-row-start: 2;
+  grid-column: 5 / span 2;
+}
+
+.hexBorder:nth-child(6), .hex:nth-child(6){
+  grid-row-start: 3;
+  grid-column: 4 / span 2;
+}
+
+.hexBorder:nth-child(7), .hex:nth-child(7){
+  grid-row-start: 1;
+  grid-column: 8 / span 2;
+}
+
+.hexBorder:nth-child(8), .hex:nth-child(8){
+  grid-row-start: 2;
+  grid-column: 7 / span 2;
+}
+
+.hexBorder:nth-child(9), .hex:nth-child(9){
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+}
+
+.hexBorder:nth-child(10), .hex:nth-child(10){
+  grid-row-start: 3;
+  grid-column: 6 / span 2;
+}
+
+.hexBorder:nth-child(11), .hex:nth-child(11){
+  grid-row-start: 3;
+  grid-column: 2 / span 2;
+}
+
+.backText{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 0.2em solid #816527;
+}
+
+.gallery img:hover{
+	opacity: 0.3;
+}
+
+.hex:hover .backText{
+  opacity: 1;
+}
+
+.text{
+  background-color: #DEDBD9;
+  color: #3C1919;
+  text-align: center;
+  font-family: Gloomhaven;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+}
+
+/*** Gallery 2 Images ***/
+.gallery2{
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  padding-bottom: 5em;
+}
+
+.gallery2 img{
+  width: 95%;
+  height: 90%;
+  margin: auto;
+}
+
+.hexBorder2{
+	width: 445px;
+  height: 470px;
+  background-color: #816527;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex2{
+  display: flex;
+  position: relative;
+  width: 440px;
+  height: 465px;
+  background-color: #DEDBD9;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/*** Table page Monsters ***/
+#level{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+#level td, #level th{
+	padding: 2%;
+}
+
+#level tr:nth-child(odd){
+	background-color: rgba(129, 101, 39, 0.7);
+}
+
+/*** developers ***/
+.container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+/*** Contact ***/
+#contactBack{
+	background-image: url("../resources/images/contactBack.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	width: 80%;
+	font-family: HighTower;
+	color: #3C1919;
+	font-size: 2.5em;
+	padding: 6%;
+}
+
+form{
+	margin-left: 15%;
+	padding-bottom: 3%;
+	margin-bottom: 30%;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea{
+	width: 80%;
+	border: 0.1em solid #3C1919;
+	outline: none;
+	font-family: HighTower;
+	font-size: 1em;
+	margin-bottom: 2%;
+	color: #3C1919;
+	background-color: #DEDBD9;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
+	border: 0.25em solid #816527;
+	background-color: #f8f7f7;
+	font-weight: bold;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill{
+    -webkit-text-fill-color: #3C1919;
+    -webkit-box-shadow: 0 0 0px 1000px #f8f7f7 inset;
+}
+
+input[type=radio]{
+	border: 1em solid #3C1919;
+	cursor: url("../resources/images/cursor2.png"), auto;
+	margin-bottom: 2%;
+}
+
+.check:checked{
+	background-color: #816527;
+	border: 0.20em solid #3C1919;
+	width: 2em;
+	height: 2em;
+}
+
+textarea{
+	height: 12em;
+	width: 80%;
+	font-family: HighTower;
+	font-size: 1em;
+	margin-bottom: 2%;
+	color: #3C1919;
+	background-color: #DEDBD9;
+	border: 0.1em solid #3C1919;
+}
+
+#submit{
+	border: 0.2em solid #3C1919;
+	margin-left: 32%;
+	font-family: Nyala;
+	font-size: 1em;
+	color: #3C1919;
+	cursor: url("../resources/images/cursor2.png"), auto;
+	text-transform: uppercase;
+}
+
+#formSubmit{
+	width: 90%;
+	margin: auto;
+}
+
+#formSubmit img{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+}

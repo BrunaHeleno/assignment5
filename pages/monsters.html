@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Discipline: Client Side Web Development
+	Course: Computer Science
+	Griffith College Cork
+	Assignment 05 - Group Project: Build a Website
+
+	Bruna Gonçalves Heleno 
+	Student Id: 3009733
+
+	Rafiq Abudulai 
+	Student Id: 3104006
+-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="../resources/images/plagueherald.ico">
+	<link rel="stylesheet" type="text/css" href="../scripts/main.css">
+	<title> Assignment 5 </title>
+</head>
+<body>
+	<nav class="navbar">
+		<div id="subnav">
+			<a href="../index.html"> Home </a>
+		</div>
+		<div id="subnav">
+			<a href="about.html"> About </a>
+		</div>
+		<div class="dropdown">
+			<button class="dropBtn"> How To Play
+    		</button>
+    		<div class="dropContent">
+			      <a href="characters.html"> Characters </a>
+			      <a href="map.html"> Map </a>
+			      <a href="#monsters"> Monsters </a>
+			      <a href="rewards.html"> Rewards </a>
+    		</div>
+		</div>
+		<div id="subnav">
+			<a href="developers.html"> Developers </a>
+		</div>
+		<div id="subnav">
+			<a href="contact.html"> Contact </a>
+		</div>
+	</nav>
+	<div id="monsters">
+		<h1 class="titleHtPlay"> Monsters </h1>
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top:2%"> Monsters </h2>
+			<ul>
+				<li> There are two types of monsters: Elite and Normal </li>
+				<li> Elite always goes first and normally, they are stronger than the normal ones </li>
+				<li> The monsters always attack the nearest character  </li>
+				<li> Tip: when executing the monster's action, try to think as the monster, I know it's nice to win, but it needs to be fair </li>
+			</ul>
+			<div class="gallery">
+				<div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster.png" >
+			    		<div class="backText">
+	    					<div class="text"> Black Imp </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster1.png">
+			    		<div class="backText">
+	    					<div class="text"> City Guard </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster2.png">
+			    		<div class="backText">
+	    					<div class="text"> Deep Terror </div>
+	  					</div>
+	  				</div>
+			    </div>
+			  	<div class="hexBorder">
+			  		<div class="hex"><img src="../resources/images/monster3.png">
+			  		<div class="backText">
+	    					<div class="text"> Flame Demon </div>
+	  					</div>
+	  				</div>
+			  	</div>
+			 	<div class="hexBorder">
+			 		<div class="hex"><img src="../resources/images/monster4.png">
+			 			<div class="backText">
+	    					<div class="text"> Harrower Infester </div>
+	  					</div>
+	  				</div>
+			 	</div>
+				<div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster5.png">
+			    		<div class="backText">
+	    					<div class="text"> Living Bones </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster6.png">
+			    		<div class="backText">
+	    					<div class="text"> Stone Golen </div>
+	  					</div>
+	  				</div>
+			    </div>
+			    <div class="hexBorder">
+			    	<div class="hex"><img src="../resources/images/monster7.png">
+			    		<div class="backText">
+	    					<div class="text"> Vermling Shaman </div>
+	  					</div>
+	  				</div>
+			    </div>
+			  	<div class="hexBorder">
+			  		<div class="hex"><img src="../resources/images/monster8.png">
+			  			<div class="backText">
+	    					<div class="text"> Wind Demon </div>
+	  					</div>
+	  				</div>
+			  	</div>
+			 	<div class="hexBorder">
+			 		<div class="hex"><img src="../resources/images/monster9.png">
+			 		<div class="backText">
+	    					<div class="text"> Cultist </div>
+	  					</div>
+	  				</div>
+			 	</div>
+				<div class="hexBorder">
+					<div class="hex"><img src="../resources/images/monster10.png">
+					<div class="backText">
+	    					<div class="text"> Savvas Lavaflow</div>
+	  					</div>
+	  				</div>
+				</div>
+   			</div>
+			<p style="margin-top: 10%;"></p> <!-- this tag is just to fix the margin at the end of the div -->
+		</div>
+
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top: 2%;"> Action </h2>
+			<ul>
+				<li> Each player chooses two cards and plays them faced down </li>
+				<li> When every one is ready, we turn up the cards and say the number of our initiative (number in the middle of the card) </li>
+				<li> After all players have said initiative, we turn over the monsters card, the one with the lowest initiative goes first </li>
+				<li> In your turn you choose the actions in your card, being one action at the top of one card and one at the bottom of the other card </li>
+				<li> Tip: you can choose any one of the two numbers on the cards as initiative, doesn't need be the lowest, sometimes it's better to go later </li>
+			</ul>
+			<div class="gallery2">
+				<div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/card.png"></div>
+			    </div>
+			    <div class="hexBorder2">
+			    	<div class="hex2"><img src="../resources/images/cardM.png"></div>
+			    </div>
+			</div>
+		</div>
+		<div class="instructions">
+			<h2 class="subtitle" style="margin-top: 2%;"> Level </h2>
+			<table id="level">
+				<tr>
+				    <th> Level </th>
+				    <th> Gold </th>
+				    <th> Damage </th>
+				    <th> XP </th>
+			  	</tr>
+				<tr>
+				    <td> 0 </td>
+				    <td> 2 </td>
+				    <td> 2 </td>
+				    <td> 4 </td>
+				</tr>
+				<tr>
+			    	<td> 1 </td>
+			    	<td> 2 </td>
+			    	<td> 3 </td>
+			    	<td> 6 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 2 </td>
+			    	<td> 3 </td>
+			    	<td> 4 </td>
+			    	<td> 8 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 3 </td>
+			    	<td> 3 </td>
+			    	<td> 5 </td>
+			    	<td> 10 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 4 </td>
+			    	<td> 4 </td>
+			    	<td> 6 </td>
+			    	<td> 12 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 5 </td>
+			    	<td> 4 </td>
+			    	<td> 7 </td>
+			    	<td> 14 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 6 </td>
+			    	<td> 5 </td>
+			    	<td> 8 </td>
+			    	<td> 16 </td>
+			  	</tr>
+			  	<tr>
+			    	<td> 7 </td>
+			    	<td> 6 </td>
+			    	<td> 9 </td>
+			    	<td> 18 </td>
+			  	</tr>
+			</table>
+			<button class="btnHtPlay"><a href="rewards.html"> Next </a></button>
+			<p style="margin-top: 10%;"></p> <!-- this tag is just to fix the margin at the end of the div -->
+		</div>
+	<footer><small> Developed by <br> Bruna Heleno <br> Rafiq Abudulai </small></footer>
+</body>
+</html>
