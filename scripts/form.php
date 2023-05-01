@@ -83,9 +83,9 @@ $headers = 'From: '.$email_from."\r\n".
     <title> Gloomhaven </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--user screen size -->
-    <link rel="icon" type="image/x-icon" href="resources/images/beast.ico"> <!--icon tab-->
+    <link rel="icon" type="image/x-icon" href="../resources/images/beast.ico"> <!--icon tab-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icons contact-->
-    <link rel="stylesheet" type="text/css" href="scripts/main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
@@ -114,16 +114,10 @@ $headers = 'From: '.$email_from."\r\n".
         </div>
     </nav>
     
-    <div>
-        <h2 style="margin-top: 3em;"> Thank you for contact me <br> I'll reply it soon </h2>
-        <img src="../images/logoBig.jpg" style="margin-top: 5em; 
-                                  border: 5px solid rgb(0, 100, 0); /*verde um pouco mais claro*/
-                                  border-radius: 70%;
-                                  margin-top: 5em;
-                                  max-width: 100%;
-                                  max-height: 100%;">
+    <div id="formSubmit">
+        <img src="../resources/images/formSubmit.png">
     </div>
-
+    <footer><small> Developed by <br> Bruna Heleno <br> Rafiq Abudulai </small></footer>
 </body>
  
 
